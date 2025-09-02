@@ -1,0 +1,48 @@
+=== Runtime Environment ===
+OS: Windows 10
+Python: 3.11.4
+TensorFlow: 2.16.2
+Accelerator: CPU (no GPU visible)
+CPU cores (logical): 24
+Split: train=0.85 of 60k, val=0.15 of 60k, test=10k original
+{
+  "n_estimators": 767,
+  "max_depth": 7,
+  "learning_rate": 0.20399009120195072,
+  "subsample": 0.9727485213257532,
+  "colsample_bytree": 0.8147347785275979,
+  "colsample_bylevel": 0.6171388097669074,
+  "colsample_bynode": 0.9756331211996446,
+  "reg_lambda": 6.723100298267467,
+  "reg_alpha": 0.31843288486246224,
+  "min_child_weight": 6.2119841984116695,
+  "gamma": 0.005770534860672791,
+  "max_bin": 162,
+  "grow_policy": "depthwise",
+  "tree_method": "hist",
+  "objective": "multi:softprob",
+  "num_class": 10,
+  "n_jobs": -1,
+  "random_state": 42
+}
+              precision    recall  f1-score   support
+
+           0     0.9768    0.9888    0.9828       980
+           1     0.9895    0.9921    0.9908      1135
+           2     0.9768    0.9797    0.9782      1032
+           3     0.9764    0.9851    0.9808      1010
+           4     0.9856    0.9766    0.9811       982
+           5     0.9876    0.9798    0.9837       892
+           6     0.9843    0.9833    0.9838       958
+           7     0.9804    0.9757    0.9781      1028
+           8     0.9775    0.9815    0.9795       974
+           9     0.9770    0.9683    0.9726      1009
+
+    accuracy                         0.9812     10000
+   macro avg     0.9812    0.9811    0.9811     10000
+weighted avg     0.9812    0.9812    0.9812     10000
+
+F1 micro=0.9812 | macro=0.9811
+Test acc=0.9812, logloss=0.0592
+AUC micro=0.9998, macro=0.9998
+Runtime fit(s)=243.04

@@ -1,0 +1,16 @@
+{
+  "epochs": 20,
+  "batch_size": 128,
+  "mixup_alpha": 0.0,
+  "n_hidden": 1,
+  "units0": 640,
+  "l2_coeff": 3.484064155079738e-05,
+  "dropout0": 0.5,
+  "use_batchnorm": true,
+  "gauss_noise_std": 0.1,
+  "maxnorm": 4.0,
+  "label_smoothing": 0.06,
+  "lr_schedule": "constant",
+  "adam_lr": 0.0015017063534803073,
+  "clipnorm": 3.205230427630199
+}

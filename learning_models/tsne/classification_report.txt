@@ -1,0 +1,49 @@
+=== Runtime Environment ===
+OS: Windows 10
+Python: 3.11.4
+TensorFlow: 2.16.2
+Accelerator: CPU (no GPU visible)
+CPU cores (logical): 24
+Split: train=0.85 of 60k, val=0.15 of 60k, test=10k original
+{
+  "tsne": {
+    "subset_size": 20000,
+    "perplexity": 60.0,
+    "learning_rate": 200.0,
+    "early_exaggeration": 12.0,
+    "init": "random",
+    "pca_prestep": false
+  },
+  "oos_mapping": "KNNRegressor(n=30, weights='distance')",
+  "classifier": {
+    "type": "RandomForest",
+    "n_estimators": 422,
+    "max_depth": 16,
+    "min_samples_leaf": 6,
+    "max_features": "sqrt",
+    "class_weight": "balanced_subsample",
+    "n_jobs": -1,
+    "random_state": 42
+  }
+}
+              precision    recall  f1-score   support
+
+           0     0.9405    0.9520    0.9462       980
+           1     0.8450    0.9797    0.9074      1135
+           2     0.7645    0.7141    0.7385      1032
+           3     0.6534    0.7485    0.6977      1010
+           4     0.8170    0.8503    0.8333       982
+           5     0.6871    0.6031    0.6424       892
+           6     0.9293    0.8925    0.9105       958
+           7     0.8746    0.7665    0.8170      1028
+           8     0.7818    0.7064    0.7422       974
+           9     0.7559    0.7978    0.7763      1009
+
+    accuracy                         0.8047     10000
+   macro avg     0.8049    0.8011    0.8012     10000
+weighted avg     0.8058    0.8047    0.8034     10000
+
+F1 micro=0.8047 | macro=0.8012
+Test acc=0.8047, logloss=0.6747
+AUC micro=0.9712, macro=0.9653
+Runtime fit(s)=3.88

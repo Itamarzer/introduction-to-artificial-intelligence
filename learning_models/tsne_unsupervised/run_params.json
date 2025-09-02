@@ -1,0 +1,52 @@
+{
+  "subset_used": 20000,
+  "reducer": {
+    "use_pca": true,
+    "n_components": 50
+  },
+  "tsne": {
+    "chosen_perplexity": 50.0,
+    "used_iter": null,
+    "perplexity_grid": [
+      30.0,
+      50.0
+    ]
+  },
+  "kmeans": {
+    "chosen_k": 12,
+    "k_grid": [
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "scores": {
+    "silhouette": 0.44582998752593994,
+    "davies_bouldin": 0.7297895856878281
+  },
+  "external_eval": {
+    "ARI": 0.6051140292988949,
+    "AMI": 0.6899633587838586,
+    "NMI": 0.6902859452236618,
+    "homogeneity": 0.7146112555329687,
+    "completeness": 0.6675621816478545,
+    "v_measure": 0.6902859452236618,
+    "mapped_accuracy": 0.69565
+  },
+  "cluster_to_digit_map": {
+    "0": 3,
+    "1": 1,
+    "2": 4,
+    "3": 5,
+    "4": 2,
+    "5": 6,
+    "6": 0,
+    "8": 8,
+    "9": 7,
+    "10": 9
+  },
+  "runtime_seconds": 129.91545367240906,
+  "note": "All text saved with UTF-8; figures use headless backend."
+}

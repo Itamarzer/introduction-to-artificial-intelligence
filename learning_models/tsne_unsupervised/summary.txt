@@ -1,0 +1,33 @@
+=== Runtime Environment ===
+OS: Windows 10
+Python: 3.11.4
+TensorFlow: 2.16.2
+Accelerator: CPU (no GPU visible)
+CPU cores (logical): 24
+
+Subset embedded: 20000 samples (out of 70000 total)
+PCA: {'use_pca': True, 'n_components': 50}
+Chosen t-SNE perplexity: 50.0
+Chosen KMeans k: 12
+Silhouette=0.4458, Davies-Bouldin=0.7298
+ARI=0.6051, AMI=0.6900, NMI=0.6903
+Homogeneity=0.7146, Completeness=0.6676, V-measure=0.6903
+Mapped accuracy (cluster->digit) = 0.6956
+
+Classification report after cluster->digit mapping (interpretability):
+              precision    recall  f1-score   support
+
+           0     0.4226    0.9685    0.5885      1966
+           1     0.9490    0.5317    0.6815      2240
+           2     0.8952    0.8592    0.8769      2039
+           3     0.7321    0.8355    0.7804      2061
+           4     0.6439    0.5352    0.5846      1831
+           5     0.8496    0.7377    0.7897      1822
+           6     0.9282    0.9143    0.9212      1995
+           7     0.6903    0.4930    0.5752      2156
+           8     0.8628    0.7662    0.8116      1912
+           9     0.4113    0.3377    0.3709      1978
+
+    accuracy                         0.6956     20000
+   macro avg     0.7385    0.6979    0.6980     20000
+weighted avg     0.7411    0.6956    0.6976     20000
