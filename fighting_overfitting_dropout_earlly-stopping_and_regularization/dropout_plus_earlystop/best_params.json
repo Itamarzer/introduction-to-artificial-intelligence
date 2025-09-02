@@ -1,0 +1,23 @@
+{
+  "name": "dropout_plus_earlystop",
+  "hyperparams": {
+    "epochs": 12,
+    "batch_size": 256,
+    "init_lr": 0.0015,
+    "l2_coeff": 0.0,
+    "dropout_rate": 0.4,
+    "early_stopping": true,
+    "patience": 5,
+    "val_frac_of_60k": 0.15
+  },
+  "metrics": {
+    "test_loss": 0.07261919230222702,
+    "test_accuracy": 0.9797999858856201,
+    "f1_micro": 0.9798,
+    "f1_macro": 0.9796990137613125,
+    "f1_weighted": 0.9797936657239931,
+    "auc_micro": 0.9995974983333334,
+    "auc_macro": 0.9996246985877161,
+    "runtime_seconds": 12.814095735549927
+  }
+}

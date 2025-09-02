@@ -1,0 +1,23 @@
+{
+  "name": "baseline_none",
+  "hyperparams": {
+    "epochs": 12,
+    "batch_size": 256,
+    "init_lr": 0.0015,
+    "l2_coeff": 0.0,
+    "dropout_rate": 0.0,
+    "early_stopping": false,
+    "patience": 0,
+    "val_frac_of_60k": 0.15
+  },
+  "metrics": {
+    "test_loss": 0.10723857581615448,
+    "test_accuracy": 0.9726999998092651,
+    "f1_micro": 0.9727,
+    "f1_macro": 0.9724890414389789,
+    "f1_weighted": 0.9727527382599099,
+    "auc_micro": 0.9994409216666669,
+    "auc_macro": 0.999518260388329,
+    "runtime_seconds": 14.587477684020996
+  }
+}
