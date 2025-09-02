@@ -1,0 +1,20 @@
+{
+  "hyperparams": {
+    "epochs": 12,
+    "batch_size": 256,
+    "init_lr": 0.0015,
+    "weight_decay": 0.0005,
+    "label_smoothing": 0.04,
+    "clipnorm": 1.0,
+    "patience": 4,
+    "val_split": 0.1,
+    "aug_intensity": 0.08
+  },
+  "test_loss": 0.33958032727241516,
+  "test_accuracy": 0.9894000291824341,
+  "f1_micro": 0.9894,
+  "f1_macro": 0.9893643939053044,
+  "f1_weighted": 0.9894004096542368,
+  "auc_micro": 0.9999183977777778,
+  "auc_macro": 0.9999230451360737
+}
