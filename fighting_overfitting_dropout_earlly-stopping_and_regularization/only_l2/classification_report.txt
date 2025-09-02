@@ -1,0 +1,28 @@
+=== Runtime Environment ===
+OS: Windows 10
+Python: 3.11.4
+TensorFlow: 2.16.2
+Accelerator: CPU (no GPU visible)
+CPU cores (logical): 24
+Split: train=0.85 of 60k, val=0.15 of 60k, test=10k original
+              precision    recall  f1-score   support
+
+           0     0.9857    0.9816    0.9836       980
+           1     0.9876    0.9859    0.9868      1135
+           2     0.9886    0.9205    0.9533      1032
+           3     0.9849    0.9683    0.9765      1010
+           4     0.9593    0.9837    0.9713       982
+           5     0.9679    0.9809    0.9744       892
+           6     0.9839    0.9572    0.9704       958
+           7     0.9493    0.9835    0.9661      1028
+           8     0.9107    0.9846    0.9462       974
+           9     0.9877    0.9554    0.9713      1009
+
+    accuracy                         0.9701     10000
+   macro avg     0.9706    0.9702    0.9700     10000
+weighted avg     0.9709    0.9701    0.9702     10000
+
+F1 micro=0.9701 | macro=0.9700 | weighted=0.9702
+Test acc=0.9701, loss=0.1690
+AUC micro=0.9993, macro=0.9995
+Runtime (s)=18.6

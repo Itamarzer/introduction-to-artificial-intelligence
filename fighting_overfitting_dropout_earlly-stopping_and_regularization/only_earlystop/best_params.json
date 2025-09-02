@@ -1,0 +1,23 @@
+{
+  "name": "only_earlystop",
+  "hyperparams": {
+    "epochs": 12,
+    "batch_size": 256,
+    "init_lr": 0.0015,
+    "l2_coeff": 0.0,
+    "dropout_rate": 0.0,
+    "early_stopping": true,
+    "patience": 5,
+    "val_frac_of_60k": 0.15
+  },
+  "metrics": {
+    "test_loss": 0.07156630605459213,
+    "test_accuracy": 0.9814000129699707,
+    "f1_micro": 0.9814,
+    "f1_macro": 0.9812564621694303,
+    "f1_weighted": 0.9813935644758838,
+    "auc_micro": 0.999733767777778,
+    "auc_macro": 0.9997346649940946,
+    "runtime_seconds": 14.190866708755493
+  }
+}

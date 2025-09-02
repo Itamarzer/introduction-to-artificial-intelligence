@@ -1,0 +1,12 @@
+=== Leaderboard by F1_macro, then accuracy ===
+                  name  test_acc  f1_macro  f1_micro  auc_macro  runtime_s
+        only_earlystop    0.9814  0.981256    0.9814   0.999735  14.190867
+dropout_plus_earlystop    0.9798  0.979699    0.9798   0.999625  12.814096
+          only_dropout    0.9781  0.977857    0.9781   0.999635  13.781676
+     l2_plus_earlystop    0.9762  0.976020    0.9762   0.999562  17.960953
+       l2_plus_dropout    0.9760  0.975922    0.9760   0.999578  17.470540
+  l2_dropout_earlystop    0.9746  0.974477    0.9746   0.999527  17.871714
+         baseline_none    0.9727  0.972489    0.9727   0.999518  14.587478
+               only_l2    0.9701  0.969997    0.9701   0.999505  18.554208
+
+Best model: only_earlystop  (F1_macro=0.9813, acc=0.9814, runtime=14.2s)
