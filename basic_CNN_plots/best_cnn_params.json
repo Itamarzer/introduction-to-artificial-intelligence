@@ -1,0 +1,10 @@
+{
+  "batch_size": 256,
+  "use_augmentation": false,
+  "l2": 0.0005,
+  "drop_conv": 0.15,
+  "drop_dense": 0.2,
+  "test_accuracy": 0.9718999862670898,
+  "f1_micro": 0.9719,
+  "f1_macro": 0.9714865710812616
+}
